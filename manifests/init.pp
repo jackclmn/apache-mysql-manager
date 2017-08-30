@@ -2,7 +2,10 @@
 class apache_mysql_manager (
   Hash $vhosts,
   ){
-  include apache
+  class { 'apache':
+    default_vhost => false,
+  }
+
   $vhosts.each |$vhost, $attributes| {
     apache::vhost { $vhost:
       port    => $attributes['port'],
