@@ -2,6 +2,7 @@
   "name": "jackclmn-apache_mysql_manager",
   "version": "0.0.1",
   "author": "autostructure",
+  "license": "license",
   "summary": "Manages apache and MySQL",
   "source": "https://github.com/jackclmn/apache_mysql_manager",
   "dependencies": [
