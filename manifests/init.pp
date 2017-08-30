@@ -2,7 +2,7 @@
 class apache_mysql_manager (
   Hash $vhosts,
   ){
-  class { 'apache': }
+  #class { 'apache': }
 
   $vhosts.each |$vhost, $attributes| {
     apache::vhost { $vhost:
